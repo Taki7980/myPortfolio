@@ -1,0 +1,16 @@
+npm init -y
+npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss init -p
+create input.css => add
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tailwind.config.js => content[] => content["*"]
+add script in package.json "start" : "vite";
+npm run start
+
+to add tailwind in production :
+
+go to the packege.json=> Under the Start : vite tag add ("build" : "vite build")
+it will create a new folder with your website....
